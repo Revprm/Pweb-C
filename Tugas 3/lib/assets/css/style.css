@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    background-color: #B9B4C7;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    background-color: #3C486B;   
+}
+#Logo{
+    font-size: 25px;
+}
+#btn_container{
+    background-color: #F0F0F0;
+}
+
+#name_card{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+#artikel{
+    border-radius: 13px;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+#artikel:hover{
+    transform: scale(1.05);
+    box-shadow: 10px;
+}

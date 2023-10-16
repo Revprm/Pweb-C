@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/assets/css/style-2023-09-22-08-31-48-596_final_3c486b-ffffff.css">
-    <link rel="stylesheet" href="node_modules/assets/css/style-2023-09-22-08-32-14-788_final_f0f0f0-000000.css">
-    <link rel="stylesheet" href="node_modules/assets/css/style.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/assets/css/style-2023-09-22-08-31-48-596_final_3c486b-ffffff.css">
+    <link rel="stylesheet" href="lib/assets/css/style-2023-09-22-08-32-14-788_final_f0f0f0-000000.css">
+    <link rel="stylesheet" href="lib/assets/css/style.css">
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -28,6 +28,10 @@
 
                     <li class="nav-item">
                         <a class="nav-link text-bs" href="#videos-section">Videos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-bs" href="#article-section">Articles</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -53,8 +57,8 @@
                             Tugas
                         </a>
                         <ul class="dropdown-menu dropdown-menu-md-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="node_modules/assets/Tugas 1/index.html" target="_blank">Tugas 1</a></li>
-                            <li><a class="dropdown-item" href="node_modules/assets/Tugas 2/index.html" target="_blank">Tugas 2</a></li>
+                            <li><a class="dropdown-item" href="lib/assets/Tugas 1/index.html" target="_blank">Tugas 1</a></li>
+                            <li><a class="dropdown-item" href="lib/assets/Tugas 2/index.html" target="_blank">Tugas 2</a></li>
                             <li><a class="dropdown-item" href="#">Tugas 3</a></li>
                         </ul>
                     </li>
@@ -66,7 +70,7 @@
 
     <div class="container-fluid mt-5 p-5" id="Biodata">
         <div class="row">
-            <div class="col-xl-6 col-md-12 order-xl-1 order-2">
+            <div class="col-md-6 order-2 order-md-1">
                 <div class="container-fluid bg-ws shadow-lg p-4 rounded-5 ">
                     <div class="container-fluid bg-bs text-ws p-2 rounded-5 shadow-lg">
                         <h1 class="mt-4 p-3 " id="Biodata">Biodata</h1>
@@ -80,9 +84,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-md-12 order-xl-2 order-1">
-                <div class="card-img float-start mt-5 p-4 me-2 bg-bs rounded-5 shadow-lg float-end mb-5" style="width: 16rem;">
-                    <img src="node_modules/assets/Img/FotoDiri.jpg" alt="FotoDiri" class="rounded-5 shadow-lg" style="max-width: 100%; height: auto;">
+            <div class="col-md-6 order-1 order-md-1">
+                <div class="card-img float-start mt-5 p-4 me-5 bg-bs rounded-5 shadow-lg float-end justify" style="width: 16rem;">
+                    <img src="lib/assets/Img/FotoDiri.jpg" alt="FotoDiri" class="rounded-5 shadow-lg" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
@@ -91,29 +95,184 @@
     <div class="mt-lg-5 me-5 ms-5 bg-ws shadow-lg p-5 rounded-5 mb-5" style="width: fit-content;" id="videos-section">
         <h1 class="h1 mb-5 text-bs text-center">Top 3 Youtube Videos</h1>
         <div class="row">
-            <div class="col-xl-6 col-md-12 mt-5">
+            <div class="col-6 mt-5">
                 <div class="container-fluid bg-bs shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
                     <div class="container-fluid bg-ws shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
                         <iframe class="rounded-5 shadow-lg mh-100 mw-100" src="https://www.youtube.com/embed/kPRA0W1kECg?si=pcKSuWe9B9xafuWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315"></iframe>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 col-md-12 mt-5">
+            <div class="col-6 mt-5">
                 <div class="container-fluid bg-bs shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
                     <div class="container-fluid bg-ws shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
                         <iframe class="rounded-5 shadow-lg mh-100 mw-100" src="https://www.youtube.com/embed/7tXsC8YlCq8?si=RAqAg-8U-rr-VVar" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315"></iframe>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-12 col-md-12 mt-5">
+            <div class="col-12 mt-5">
                 <div class="container-fluid bg-bs shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
                     <div class="container-fluid bg-ws shadow-lg p-4 rounded-5 flex-column" style="width: fit-content;">
-                        <iframe class="rounded-5 shadow-lg mh-100 mw-100" src="https://www.youtube.com/embed/EFg3u_E6eHU?si=R8G4ezh7kN3itt8G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315"></iframe>
+                        <iframe class="rounded-5 shadow-lg mh-100 mw-100" src="https://www.youtube.com/embed/2hBjTs3qRg0?si=8cgu1kReI5PciOwZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <div class="mt-lg-5 me-5 ms-5 bg-ws shadow-lg p-5 rounded-5 mb-5" id="article-section">
+        <h1 class="text-center">10 Websites Articles</h1>
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.animenewsnetwork.com/news/2023-10-08/dead-mount-death-play-anime-2nd-half-previewed-in-show-3rd-promo-video/.203221" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws flex-column">
+                            Dead Mount Death Play Anime's 2nd Half Previewed in Show's 3rd Promo Video
+                        </h4>
+                        <img src="https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.6/202232/dead.jpg" alt="Dead Mount Death Play" class="rounded-3 ps-5 flex-column mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start flex-column">
+                            King Amusement Creative mengungkapkan video promosi ketiga pada hari Sabtu untuk adaptasi anime televisi dari manga Dead Mount Death Play karya Ryohgo Narita dan Shinta Fujimoto.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.foxnews.com/tech/googles-new-tech-how-does-pixel-8-stack-up-iphone-15" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            Google’s new tech: How does the Pixel 8 stack up to the iPhone 15?
+                        </h4>
+                        <img src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2023/10/1440/810/GettyImages-1705742714.jpg?ve=1&tl=1" alt="Google pixel vs Iphone" class="rounded-3 mw-100 mh-100" style="width: 400px;">
+                        <p class="p-3 pt-4 text-ws text-start" style="width: fit-content;">
+                            Peluncuran perangkat Apple pada musim gugur mendapat banyak sorotan, tetapi Google ingin Anda ingat bahwa mereka juga hadir di sini - dengan banyak teknologi baru yang mengagumkan dan beberapa peningkatan AI yang sangat mengesankan akan segera hadir di ponsel Anda.
+                        </p>
+                        <p class="p-3 pt-1 pb-5 text-ws text-start" style="width: fit-content;">
+                            Mari kita uraikan semua yang baru saja diumumkan Google dan lihat bagaimana Pixel 8 bersaing dengan iPhone 15 yang baru.
+                        </p>
+                    </a>
+                </div>
+            </div>
+                  
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.animenewsnetwork.com/news/2023-10-08/the-angel-next-door-spoils-me-rotten-anime-gets-2nd-season/.203227" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            The Angel Next Door Spoils Me Rotten Anime Gets 2nd Season
+                        </h4>
+                        <img src="https://cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.6/203227/tenshisama02_teaser.jpg" alt="Mahiru" class="rounded-3 ps-5 mw-100 mh-100" style="width: 22rem;">
+                        <p class="p-3 pt-4 text-ws text-start pb-0">
+                            Acara besar pertama untuk anime televisi seri novel ringan The Angel Next Door Spoils Me Rotten (Otonari no Tenshi-sama ni Itsu no Ma ni ka Dame Ningen ni Sareteita Ken) karya Saekisan mengumumkan pada hari Minggu bahwa musim kedua telah mendapatkan lampu hijau.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.sportskeeda.com/esports/news-imagine-good-video-game-fans-shocked-twitch-streamer-gets-mistakenly-banned-osu-good" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            "Imagine being so good at a video game" - Fans shocked as Twitch streamer gets mistakenly banned in osu! for being too good
+                        </h4>
+                        <img src="https://staticg.sportskeeda.com/editor/2023/10/699fd-16966680490065-1920.jpg" alt="AkolibedBanned" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-0">
+                            Seorang osu! Twitch streamer yang dikenal sebagai Akolibed baru-baru ini dilarang dalam game karena terlalu bagus dalam permainan ritme yang bergerak cepat.
+                        </p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://earlygame.com/fifa/ea-sports-fc-news-about-the-new-fifa-24" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            EA FC 24: News, Release Date, New Features & FUT Changes For FIFA 24
+                        </h4>
+                        <img src="https://prod.assets.earlygamecdn.com/images/EA-FC-24-Cover-standard-edition.jpg?transform=article3x_webp" alt="FC24" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-2">
+                            Game sepak bola EA yang akan datang adalah transisi dari FIFA 24 ke EA Sports FC 24. Kami akan terus mengabari Anda tentang semua berita dan fitur baru, serta tentang harga dan tanggal rilis penting untuk EA FC 24.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://depok.pikiran-rakyat.com/teknologi/pr-097220208/nintendo-akan-rilis-konsol-terbaru-pada-september-2024-terdapat-dua-varian-berbeda-dari-sebelumnya" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            Nintendo akan Rilis Konsol Terbaru Pada September 2024, Terdapat Dua Varian Berbeda Dari Sebelumnya
+                        </h4>
+                        <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2023/09/18/3925406695.jpg" alt="Switch" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-4">
+                            Dikabarkan Nintendo akan merilis penerus Nintendo Switch pada akhir tahun 2024. Adanya penerus dari Nintendo Switch sangat diperlukan.
+                        </p>                            
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.cbssports.com/nba/news/hornets-kai-jones-requests-trade-on-social-media-while-away-from-team-could-be-subject-to-fine-or-suspension/" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            Hornets Kai Jones requests trade on social media while away from team, could be subject to fine or suspension
+                        </h4>
+                        <img src="https://sportshub.cbsistatic.com/i/r/2023/09/30/ba378fa8-d920-4df7-a65f-e3605c4e0f37/thumbnail/770x433/e22a125bb39ca550f53edb65ccacd2ec/untitled-design-2023-09-30t142519-184.png" alt="Hornets" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-4">
+                            Pemain besar Charlotte Hornets, Kai Jones, yang saat ini sedang berada di luar tim, turun ke media sosial pada Senin sore untuk mengeluarkan permintaan trade secara terbuka dalam insiden media sosial terbarunya di musim ini.
+                        </p>                            
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://uwaterloo.ca/news/mathematics/waterloo-tops-competition-2023-icpc-north-america" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            Waterloo tops the competition at 2023 ICPC North America Championship
+                        </h4>
+                        <img src="https://uwaterloo.ca/news/sites/ca.news/files/styles/feature_xl/public/waterloo_at_2023_nac_icpc_podium.jpg?itok=1PIiFS_I" alt="ICPC" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-5">
+                            tim yang terdiri dari tiga pemrogram algoritmik Waterloo memuncaki kompetisi di Kejuaraan Kontes Pemrograman Perguruan Tinggi Internasional di Amerika Utara, yang diselenggarakan pada tanggal 29 Mei di University of Central Florida.
+                        </p>
+                        <p>
+                            <!-- just for empty space -->
+                        </p>                            
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://thenewstack.io/dev-news-svelte-5-vs-vanillajs-and-googles-project-idx/" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            Dev News: Svelte 5 vs. VanillaJS and Google’s Project IDX
+                        </h4>
+                        <img src="https://cdn.thenewstack.io/media/2023/08/65cdc316-ferenc-almasi-fhaflthtocs-unsplash-1-1024x676.jpg" alt="ProjectIDX" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-5">
+                            Apa yang akan ditawarkan oleh Svelte 5, alat pengembangan aplikasi multiplatform Google, TypeScript 5.2 dan solusi e-commerce Vercel yang baru.
+                        </p>
+                        <p>
+                            <!-- just for empty space -->
+                        </p>                            
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-12 pt-5" id="artikel">
+                <div class="container-fluid bg-bs text-ws shadow-lg p-4 rounded-3 flex-column shadow-sm" style="width: fit-content;">
+                    <a href="https://www.wired.com/story/how-to-use-google-bard-gmail-docs-ai/" style="text-decoration: none;" target="_blank">
+                        <h4 class="p-2 text-ws">
+                            How to Use Google Bard to Find Your Stuff in Gmail and Docs
+                        </h4>
+                        <img src="https://media.wired.com/photos/6520380bc804fbff22818d45/master/w_2240,c_limit/How-to-Use-Google-Bard%E2%80%99s-New-Extensions-for-Gmail-and-Docs-GettyImages-1367848576.jpg" alt="GoogleBard" class="rounded-3 ps-2 mw-100 mh-100">
+                        <p class="p-3 pt-4 text-ws text-start pb-5">
+                            Google baru-baru ini meluncurkan beberapa pembaruan untuk Bard, chatbot AI-nya. Fitur-fitur baru ini mencakup ekstensi yang menghubungkan Bard ke lebih banyak aspek portofolio Google, seperti Gmail, Dokumen, dan YouTube. Perusahaan ini terus bereksperimen dengan kecerdasan buatan sebagai bagian dari gelombang pencarian informasi berikutnya.
+                        </p>                           
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
