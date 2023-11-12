@@ -1,21 +1,21 @@
 # Pweb-C
 ---
 ### Tugas 1:
-<p>Membuat website sederhana dengan HTML & CSS sebagai pengenalan dengan Website</p><br>
+<p>Created a simple website with HTML & CSS as an introduction to the Website</p><br>
 <img src="Img/Tugas1.jpg" alt=" Tugas 1"> 
 
 ---
 ### Tugas 2:
-<p>Memperbaiki style/tampilan dari tugas 1 dengan CSS yang sudah diperbaiki</p><br>
+<p>Improve the style/appearance of task 1 with improved CSS</p><br>
 <img src="Img/Tugas2.jpg" alt=" Tugas 2"> 
 
 ---
 ### Tugas 3:
-<p>Memperbaiki style/tampilan website dengan menggunakan framework CSS (Bootstrap)</p>
+<p>Improve website style/appearance using CSS framework (Bootstrap)</p>
 <img src="Img/Tugas3.jpg" alt=" Tugas 3">
 
 ### Tugas 4:
-<p> Simple Php Script to Add, Modify, Delete and Display Data from MySQl</p>
+<p>Simple Php Script to Add, Modify, Delete and Display Data from MySQl</p>
 
 ### Tugas 5:
-<p> Using database for the articles -> Modified ETS Project </p>
+<p>Using databases for articles -> Modified ETS project</p>
