@@ -14,5 +14,8 @@
 <p>Memperbaiki style/tampilan website dengan menggunakan framework CSS (Bootstrap)</p>
 <img src="Img/Tugas3.jpg" alt=" Tugas 3">
 
-Current website -> 
-<a href="https://pweb-c.vercel.app">Website</a>
+### Tugas 4:
+<p> Simple Php Script to Add, Modify, Delete and Display Data from MySQl</p>
+
+### Tugas 5:
+<p> Using database for the articles -> Modified ETS Project </p>
