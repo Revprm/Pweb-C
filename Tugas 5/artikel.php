@@ -3,7 +3,7 @@ include("sqlcon.php");
 $conn = dbconn();
 
 $articleId = isset($_GET['id']) ? $_GET['id'] : null;
-if ($articleId=="") header("location:index.php");
+if ($articleId == "") header("location:index.php");
 
 $sql = "SELECT * FROM artikel WHERE id = $articleId";
 $result = $conn->query($sql);
@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
     $image_url = $row['image_url'];
 } else {
     $articleTitle = "Article Not Found";
-    $paragraphs = ["The requested article does not exist."];
+    $content = ["The requested article does not exist."];
 }
 
 $conn->close();
@@ -39,8 +39,8 @@ $conn->close();
         <h2 class="text-center p-5 text-white"><?php echo $articleTitle ?></h2>
     </div>
     <div class="container-fluid justify-content-center">
-        <?php echo '<img class="p-3 rounded-5 col-xl-5 mw-100" width="400px" src="' . $row['image_url'] . '" alt="' . $row['judul'] . '">';?>
-        <?php echo $content?>
+        <?php echo '<img class="p-3 rounded-5 col-xl-5 mw-100" width="400px" src="' . $row['image_url'] . '" alt="' . $row['judul'] . '">'; ?>
+        <?php echo $content ?>
     </div>
 
     <footer class="text-center pt-5">

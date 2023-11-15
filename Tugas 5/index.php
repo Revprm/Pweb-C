@@ -4,7 +4,7 @@ include("sqlcon.php");
 $conn = dbconn();
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
 
 $sql = "SELECT * FROM artikel";
@@ -14,6 +14,7 @@ $result = $conn->query($sql);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Tugas 5</title>
   <meta charset="utf-8">
@@ -24,15 +25,16 @@ $result = $conn->query($sql);
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
 </head>
+
 <body>
   <section id="About">
-      <div class="container-fluid text-center">
-        <h1>Revy Pramana</h1>
-        <figcaption class="blockquote-footer mt-2 text-light">
-          <em>A keyboard enthusiast</em>
-        </figcaption>
-        <p class="fs-5"><em>5025221252</em></p>
-      </div>
+    <div class="container-fluid text-center">
+      <h1>Revy Pramana</h1>
+      <figcaption class="blockquote-footer mt-2 text-light">
+        <em>A keyboard enthusiast</em>
+      </figcaption>
+      <p class="fs-5"><em>5025221252</em></p>
+    </div>
   </section>
 
   <div class="container rounded-5 p-5">
@@ -46,24 +48,24 @@ $result = $conn->query($sql);
       </thead>
       <tbody id="myTable">
         <?php
-          if ($result->num_rows > 0) {
-              while($row = $result->fetch_assoc()) {
-                  echo '<tr>';
-                  echo '<th scope="col" id="desc">';
-                  echo '<a href="artikel.php?id=' . $row['id'] . '" target="_blank" style="text-decoration: none;">';
-                  echo '<img class="img-responsive mw-100 mh-100 col-xl-6 col-md-12 p-2" width="475px" src="' . $row['image_url'] . '" alt="' . $row['judul'] . '">';
-                  echo '<div class="col-xl-6 col-md-12 float-end ps-5 pt-4 pe-5 flex-column">';
-                  echo '<h4>' . $row['judul'] . '</h4>';
-                  echo '<p>' . $row['subjudul'] . '</p>';
-                  echo '</div>';
-                  echo '</a>';
-                  echo '</th>';
-                  echo '</tr>';
-              }
-          } else {
-              echo '<tr><th scope="col" id="desc">No articles found</th></tr>';
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo '<tr>';
+            echo '<th scope="col" id="desc">';
+            echo '<a href="artikel.php?id=' . $row['id'] . '" target="_blank" style="text-decoration: none;">';
+            echo '<img class="img-responsive mw-100 mh-100 col-xl-6 col-md-12 p-2" width="475px" src="' . $row['image_url'] . '" alt="' . $row['judul'] . '">';
+            echo '<div class="col-xl-6 col-md-12 float-end ps-5 pt-4 pe-5 flex-column">';
+            echo '<h4>' . $row['judul'] . '</h4>';
+            echo '<p>' . $row['subjudul'] . '</p>';
+            echo '</div>';
+            echo '</a>';
+            echo '</th>';
+            echo '</tr>';
           }
-          $conn->close();
+        } else {
+          echo '<tr><th scope="col" id="desc">No articles found</th></tr>';
+        }
+        $conn->close();
         ?>
       </tbody>
     </table>
@@ -83,4 +85,5 @@ $result = $conn->query($sql);
   </footer>
 
 </body>
+
 </html>

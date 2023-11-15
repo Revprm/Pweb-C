@@ -1,58 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
 
-*{
-    font-family: 'Inter', 'Poppins', sans-serif;
+* {
+  font-family: "Inter", "Poppins", sans-serif;
 }
 
-#navtext{
-    color: #D0E7D2;
-    font-size: 23px;
+#navtext {
+  color: #d0e7d2;
+  font-size: 23px;
 }
 
-body{
-    background-color: #E5C3A6;
+body {
+  background-color: #e5c3a6;
 }
 
-#About{
-    background-color: #4B527E;
-    padding: 100px;
-    color: #FFF;
+#About {
+  background-color: #4b527e;
+  padding: 100px;
+  color: #fff;
 }
 
-#desc{
-    background-color: #FFF;
-    transition: 0.5s;
+#desc {
+  background-color: #fff;
+  transition: 0.5s;
 }
 
-#desc p{
-    color: #4B527E;
-    transition: 0.5s;
+#desc p {
+  color: #4b527e;
+  transition: 0.5s;
 }
 
-#desc h4{
-    color:#4B527E;
-    transition: 0.5s;
+#desc h4 {
+  color: #4b527e;
+  transition: 0.5s;
 }
 
-#desc:hover{
-    transform: scale(1.06);
+#desc:hover {
+  transform: scale(1.06);
 }
 
-#pageInfo{
-    margin: 3px;
+#pageInfo {
+  margin: 3px;
 }
 
-.btn{
-    color: white;
-    background-color: #213555;
-    transition: 0.4s;
-    border-radius: 30px;
+.btn {
+  color: white;
+  background-color: #213555;
+  transition: 0.4s;
+  border-radius: 30px;
 }
-.btn:hover{
-    background-color: #ADC4CE; 
-    color: black;
+.btn:hover {
+  background-color: #adc4ce;
+  color: black;
 }
 
-#containercard{
-    background-color: #4B527E;
+#containercard {
+  background-color: #4b527e;
 }
